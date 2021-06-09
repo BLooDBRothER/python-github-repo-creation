@@ -49,6 +49,7 @@ alias repo="{fill path}/github.py"
 ### Warning! Don't forget to set upstream when you Initialize it
 ```
 git push -u origin main
+```
 ___
 ## Reference
 
