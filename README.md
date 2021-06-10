@@ -6,16 +6,16 @@ Create and initialize the github repository by running the pyhton code.
 ___
 ## requirements
 
-* #### [Create Your Personal Access Token](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token)
-* #### [Tkinter Tutorial + Installation Guide](https://realpython.com/python-gui-tkinter/)
+* [Create Your Personal Access Token](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token)
+* [Tkinter Tutorial + Installation Guide](https://realpython.com/python-gui-tkinter/)
 ```
 pip install requests
 ```
-* #### Pyperclip for copy and paste
+* Pyperclip for copy and paste
 ```
 pip install pyperclip
 ```
-* #### Linux requires install xclip or xsel via package manager. For example, in Debian:
+* Linux requires install xclip or xsel via package manager. For example, in Debian:
 ```
 sudo apt-get install xclip
 ```
