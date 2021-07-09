@@ -35,12 +35,13 @@ git clone https://github.com/BLooDBRothER/python-github-repo-creation.git
 
 ![alt text](https://i.ibb.co/WHt8ZCn/Screenshot-from-2021-06-09-11-42-08.png )
 
+3. Fill the github.py path in initialize.sh
 
-3. set the github.py executable permission
+4. set the github.py and initialize.sh executable permission
 
-4. Run the command in that folder location
+5. Run the command in that folder location
 ```
-./github.py
+./initialize.sh
 ```
 
 #### You can set Alias in your .bashrc file or ....
