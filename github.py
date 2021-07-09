@@ -14,10 +14,10 @@ gadd = [git, 'add', '.']
 gcommit = [git, 'commit', '-m', 'First commit']
 gfetch = [git, 'fetch']
 gpull = [git, 'pull', 'origin', 'main']
-gpush = [git, 'push', 'origin', 'main']
+gpush = [git, 'push', '-u', 'origin', 'main']
 
 def gstart():
-    os.chdir(rpath.get())
+    # os.chdir(sys.argv[1])
     copySSH()
     grp = pc.paste()
     gremote = [git, 'remote', 'add', 'origin', grp]
@@ -28,6 +28,7 @@ def gstart():
     sp.call(gpull)
     sp.call(gadd)
     sp.call(gcommit)
+    sp.call(gpush)
 
     output['text'] = f"-> git initialization done"
 
@@ -109,10 +110,11 @@ dist = tk.Label(text="Enter the repo Discription",
                 height=5)
 disen = tk.Entry()
 
-rpl = tk.Label(text="Path",
-                 width=70,
-                 height=5)
-rpath = tk.Entry()
+# rpl = tk.Button(text="Create Web files",
+#                  width=70,
+#                  height=5,
+#                  command=createFiles)
+# rpath = tk.Entry()
 
 btn = tk.Button(text="Create Repo",
                 width=50,
@@ -132,8 +134,8 @@ repen.pack()
 dist.pack()
 disen.pack()
 
-rpl.pack()
-rpath.pack()
+# rpl.pack()
+# rpath.pack()
 
 btn.pack()
 

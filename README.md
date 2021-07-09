@@ -3,19 +3,21 @@ ___
 ## Description
 Create and initialize the github repository by running the pyhton code.
 ### caution! works with Linux only
+### I've used SSH for git initialization, If you want to go for http change copySSH() to copyHTTP() in github.py line 22
 ___
+### creates index.html style.css main.js in initialize.sh
 ## requirements
 
-* [Create Your Personal Access Token](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token)
-* [Tkinter Tutorial + Installation Guide](https://realpython.com/python-gui-tkinter/)
+* #### [Create Your Personal Access Token](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token)
+* #### [Tkinter Tutorial + Installation Guide](https://realpython.com/python-gui-tkinter/)
 ```
 pip install requests
 ```
-* Pyperclip for copy and paste
+* #### Pyperclip for copy and paste
 ```
 pip install pyperclip
 ```
-* Linux requires install xclip or xsel via package manager. For example, in Debian:
+* #### Linux requires install xclip or xsel via package manager. For example, in Debian:
 ```
 sudo apt-get install xclip
 ```
@@ -43,10 +45,9 @@ git clone https://github.com/BLooDBRothER/python-github-repo-creation.git
 
 #### You can set Alias in your .bashrc file or ....
 ```
-alias repo="{fill path}/github.py"
+alias repo="{fill path}/initialize.sh"
 ```
-
-### Warning! Don't forget to set upstream when you Initialize it
+### I've added push with set upstream if you don't want that comment line 31. Warning! Don't forget to set upstream when you Initialize it if you commented
 ```
 git push -u origin main
 ```
